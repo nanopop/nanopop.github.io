@@ -1,7 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      color: #333;
+    }
+
+    .logo {
+      margin-top: 80px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    hr {
+      width: 60%;
+      margin: 30px auto;
+      border: none;
+      border-top: 2px solid #ccc;
+    }
+
+    .quote {
+      font-size: 1.5em;
+      font-style: italic;
+      margin: 20px auto 60px auto;
+      width: 60%;
+    }
+
+    .founders {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 0 20px 60px 20px;
+    }
+
+    .founder {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+    }
+
+    .founder img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .founder h3 {
+      margin: 10px 0 5px 0;
+      font-size: 1.2em;
+    }
+
+    .founder p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .quote, hr {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Goodbye World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="logo">
+    <img src="logo.png" alt="Company Logo">
+  </div>
+
+  <hr>
+
+  <div class="quote">
+    "Innovation is seeing what everybody has seen and thinking what nobody has thought." – Dr. Albert Szent-Györgyi
+  </div>
+
+  <div class="founders">
+    <div class="founder">
+      <img src="founder1.jpg" alt="Founder 1">
+      <h3>Alice Johnson</h3>
+      <p>Engineer and creative mind behind our product design. Always chasing elegant solutions.</p>
+    </div>
+    <div class="founder">
+      <img src="founder2.jpg" alt="Founder 2">
+      <h3>Brian Smith</h3>
+      <p>Data wizard and strategist. Believes every challenge is an opportunity to optimize.</p>
+    </div>
+    <div class="founder">
+      <img src="founder3.jpg" alt="Founder 3">
+      <h3>Clara Zhang</h3>
+      <p>Visionary leader focused on building an inclusive and impactful tech culture.</p>
+    </div>
+  </div>
 </body>
 </html>
